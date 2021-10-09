@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.navbar {
+    overflow: auto;
+    margin: 20px;
+}
+
+.navbar__logo {
+    float: left;
+}
+
+.navbar__links {
+    float: right;
+}
+
+.navbar__links li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.navbar__links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.services__header,
+.numbers,
+.portfolio__header {
+    background: linear-gradient(to right, #8490ff, #62bdfc);
+    text-align: center;
+    color: #ffffff;
+    padding: 100px;
+    margin-bottom: 150px;
+}
+
+.offered__services__header,
+.latest__projects__header,
+.choose__plan__header,
+.client__feedback__header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.offered__services__header p,
+.offered__services__item p,
+.latest__projects__header p,
+.latest__projects__item p,
+.choose__plan__header p,
+.choose__plan__item__top p,
+.choose__plan__item__middle li,
+.client__feedback__header p,
+.client__feedback__item p,
+.footer__item p {
+    color: #777777;
+}
+
+.offered__services__content,
+.latest__projects__content {
+    display: table;
+    margin: 20px;
+}
+
+.offered__services__item,
+.latest__projects__item {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.numbers {
+    display: table;
+    width: 100%;
+}
+
+.numbers__item,
+.footer__item {
+    display: table-cell;
+}
+
+.navbar__sublinks {
+    vertical-align: middle;
+    margin-top: 100px;
+}
+
+.navbar__sublinks li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.navbar__sublinks li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.img-wrapper img {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.latest__projects__item .img-wrapper {
+    position: relative;
+}
+
+.latest__projects__item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    background: rgb(132, 144, 255, 0.5);
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest__projects__item .img-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+.latest__projects__item .overlay img {
+    width: 32px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.choose__plan {
+    margin: 150px;
+}
+
+.choose__plan__content {
+    background: #f9f9ff;
+    display: flex;
+    padding: 40px;
+}
+
+.choose__plan__item__top p {
+    margin-bottom: 25px;
+}
+
+.choose__plan__item {
+    padding: 20px;
+    text-align: center;
+}
+
+.choose__plan__item__number {
+    border: 30px solid rgba(132, 144, 255, 0.1);
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    margin: 0 auto;
+    background-color: rgba(132, 144, 255, 0.1);
+    align-items: center;
+    display: table;
+}
+
+.choose__plan__item__number h4 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: xx-large;
+    font-weight: lighter;
+}
+
+.choose__plan__item__middle li {
+    list-style: none;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+}
+
+.choose__plan__item h1 {
+    margin-top: 40px;
+}
+
+.client__feedback {
+    background: #f9f9ff;
+    padding: 100px;
+}
+
+.client__feedback__content {
+    display: flex;
+}
+
+.client__feedback__item {
+    background: #ffffff;
+    width: 600px;
+    float: left;
+    margin-right: 30px;
+    padding: 20px;
+}
+
+.client__feedback__item img {
+    float: left;
+}
+
+.client__info {
+    margin-left: 100px;
+}
+
+.move__btns {
+    float: right;
+    align-self: center;
+}
+
+.move__btn {
+    cursor: pointer;
+    padding: 12px;
+    margin: 3px;
+    border: none;
+    background: #ffffff;
+    color: #777777;
+    font-size: 24px;
+}
+
+.footer__container {
+    background: #04091e;
+    display: table;
+    color: #ffffff;
+    padding: 100px;
+}
+
+.footer__item {
+    width: 40%;
+    padding-right: 40px;
+}
+
+span {
+    color: #8490ff;
+}
+
+.client__feedback__item h4,
+.client__feedback__item p,
+.choose__plan__item__top h4,
+.choose__plan__item__top p,
+.choose__plan__item__top h1,
+.footer__item h4,
+.footer__item p {
+    padding: 10px;
+}
+
+.email__box {
+    display: table;
+    width: 100%;
+}
+
+.email__address {
+    padding: 10px;
+    width: 90%;
+    margin: 10px 0;
+}
+
+.arrow__btn {
+    cursor: pointer;
+    width: 10%;
+    background: #8490ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 10px 0;
+}
+
+.footer__icons {
+    vertical-align: middle;
+}
+
+.fab {
+    color: white;
+    padding: 10px;
+}
